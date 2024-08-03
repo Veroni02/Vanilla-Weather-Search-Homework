@@ -5,28 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla Weather Search Homework</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div>
+    <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city.." />
-          <input type="submit" />
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input
+            type="submit"
+            class="search-form-button"
+            id="search-form-button"
+          />
         </form>
         <main>
-          <div>
+          <div class="weather-app-data">
             <div>
-              <h1>Paris</h1>
-              <p>
-                Friday <span>23:11</span>, clear sky
+              <h1 class="weather-app-city">Paris</h1>
+              <p class="weather-app-details">
+                Friday 23:11, clear sky
                 <br />
-                Humidity: <strong>50%</strong>, Wind: <strong>5.14km/h</strong>
+                Humidity: <strong class="humidity">50%</strong>, Wind:
+                <strong class="wind">5.14km/h</strong>
               </p>
             </div>
-            <div>
-              <div>☀</div>
-              <div>28</div>
-              <div>°C</div>
+            <div class="weather-app-temperature-container">
+              <div class="icon">
+                <img
+                  src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                  alt="weather-app-icon"
+                  class="weather-app-icon"
+                />
+              </div>
+              <div class="weather-app-temperature">28</div>
+              <div class="weather-app-unit">°C</div>
             </div>
           </div>
         </main>
