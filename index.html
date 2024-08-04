@@ -29,38 +29,44 @@
             id="search-form-button"
           />
         </form>
-        <main>
-          <div class="weather-app-data">
-            <div>
-              <h1 class="weather-app-city">Paris</h1>
-              <p class="weather-app-details">
-                Friday 23:11, clear sky
-                <br />
-                Humidity: <strong class="humidity">50%</strong>, Wind:
-                <strong class="wind">5.14km/h</strong>
-              </p>
-            </div>
-            <div class="weather-app-temperature-container">
-              <div class="icon">
-                <img
-                  src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-                  alt="weather-app-icon"
-                  class="weather-app-icon"
-                />
-              </div>
-              <div class="weather-app-temperature">28</div>
-              <div class="weather-app-unit">°C</div>
-            </div>
-          </div>
-        </main>
-        <footer>
-          <p>
-            This project was coded by <a href="#">Linn Nay Chi Hlaing</a>, is
-            <a href="#">open-sourced on GitHub</a> and
-            <a href="#">hosted on Nelify</a>
-          </p>
-        </footer>
       </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              <span class="time" id="time">Friday 23:11</span>,
+              <span class="condition" id="condition">clear sky</span>
+              <br />
+              Humidity: <strong class="humidity" id="humidity">50%</strong>,
+              Wind:
+              <strong class="windSpeed" id="windSpeed">5.14km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="icon">
+              <img
+                src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                alt="weather-app-icon"
+                class="weather-app-icon"
+                id="weather-app-icon"
+              />
+            </div>
+            <div class="weather-app-temperature" id="weather-app-temperature">
+              28
+            </div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by <a href="#">Linn Nay Chi Hlaing</a>, is
+          <a href="#">open-sourced on GitHub</a> and
+          <a href="#">hosted on Nelify</a>
+        </p>
+      </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
